@@ -154,8 +154,8 @@ class WordVocab(Vocab):
 
 def main():
     parser = argparse.ArgumentParser(description='Build a vocabulary pickle')
-    parser.add_argument('--corpus_path', '-c', type=str, default='/content/chembl24_corpus.txt', help='path to th ecorpus')
-    parser.add_argument('--out_path', '-o', type=str, default='/content/vocab.pkl', help='output file')
+    parser.add_argument('--corpus_path', '-c', type=str, default='chembl24_corpus.txt', help='path to th ecorpus')
+    parser.add_argument('--out_path', '-o', type=str, default='vocab.pkl', help='output file')
     parser.add_argument('--min_freq', '-m', type=int, default=500, help='minimum frequency for vocabulary')
     parser.add_argument('--vocab_size', '-v', type=int, default=None, help='max vocabulary size')
     parser.add_argument('--encoding', '-e', type=str, default='utf-8', help='encoding of corpus')
